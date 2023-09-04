@@ -1,0 +1,36 @@
+
+.widget[type="window"] {
+    position: absolute;
+    background: var(--col-back1);
+
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.widget[type="window"][focus] {
+    box-shadow: var(--box-shadow);
+}
+
+.widget[type="window"] > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border);
+    user-select: none;
+}
+
+.widget[type="window"] > header > label {
+    padding: 2px 4px;
+}
+
+.widget[type="window"] > header > .window-controlls {
+    display: flex;
+    align-items: center;
+}
+.widget[type="window"] > header > .window-controlls > i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 5px 7px;
+    border-left: var(--border);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nylon</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="img/nylon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/nylon/menubar.css">
+    <link rel="stylesheet" href="css/nylon/widget.css">
+    <link rel="stylesheet" href="css/nylon/widgetwindow.css">
+</head>
+<body>
+    
+    <header id="main-header" style="z-index: 3;">
+        <img src="img/nylon.svg" alt="" draggable="false">
+        <div class="menubar" style="--width: 300px;">
+            <div class="menubar-tab">
+                <label>File</label>
+                <div class="dropdown">
+                    <div class="entry">New<label>Ctrl+N</label></div>
+                    <div class="entry">Save<label>Ctrl+S</label></div>
+                    <hr>
+                    <div class="entry">Load<label>Ctrl+O</label></div>
+                    <div class="menubar-tab">
+                        <label>Load Recent</label>
+                        <i class="fa fa-chevron-right"></i>
+                        <div class="dropdown">
+                            <div class="entry">El</div>
+                            <hr>
+                            <div class="entry">Sr</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="entry">Insert</div>
+                </div>
+            </div>
+            <div class="menubar-tab">
+                <label>Edit</label>
+                <div class="dropdown">
+                    <div class="entry">Undo<label>Ctrl+Z</label></div>
+                    <div class="entry">Redo<label>Ctrl+Y</label></div>
+                    <hr>
+                    <div class="entry">Cut<label>Ctrl+X</label></div>
+                    <div class="entry">Copy<label>Ctrl+C</label></div>
+                    <div class="entry">Paste<label>Ctrl+V</label></div>
+                </div>
+            </div>
+            <div class="menubar-tab">
+                <label>Selection</label>
+                
+            </div>
+            <div class="menubar-tab">
+                <label>View</label>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="window-widget-container" id="main-widget-container" style="z-index: 1;">
+        <div class="widget" type="window" widget-title="Test window" focus style="left: 200px; top: 200px; width: 300px; height: 200px;">
+            <header>
+                <label>Test Window</label>
+                <div class="window-controlls">
+                    <i class="fa fa-car"></i>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </header>
+            <section>
+                Helo
+            </section>
+        </div>
+    </div>
+
+    <footer id="main-footer" style="z-index: 2;">
+        Footer
+    </footer>
+
+
+
+    <script src="javascript/nylon/main.js"></script>
+    <script src="javascript/nylon/utilities.js"></script>
+    <script src="javascript/nylon/menubar.js"></script>
+    <script>
+        mainInit();
+
+        //document.documentElement.setAttribute("color-theme", "light");
+    </script>
+
+</body>
+</html>

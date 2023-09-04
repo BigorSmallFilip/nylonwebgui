@@ -1,0 +1,12 @@
+
+.window-widget-container {
+    position: absolute;
+    top: var(--main-header-height);
+    width: 100%;
+    height: calc(100vh - var(--main-footer-height));
+    overflow: hidden;
+}
+
+.widget section {
+    padding: 4px;
+}

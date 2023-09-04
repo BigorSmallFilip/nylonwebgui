@@ -1,0 +1,86 @@
+
+.menubar {
+    display: flex;
+    user-select: none;
+}
+
+.menubar > .menubar-tab {
+    position: relative;
+}
+.menubar > .menubar-tab > label {
+    padding: 4px 6px;
+    border-radius: var(--border-radius);
+}
+
+.menubar > .menubar-tab[active] > label,
+.menubar > .menubar-tab:hover > label {
+    background: var(--col-fore0);
+}
+
+.menubar > .menubar-tab > .dropdown {
+    display: none;
+    flex-direction: column;
+    width: var(--width);
+    padding: 6px 0;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: var(--col-back1);
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+.menubar > .menubar-tab[active] > .dropdown {
+    display: flex;
+}
+
+.dropdown > .entry,
+.dropdown > .menubar-tab {
+    position: relative;
+    width: auto;
+    margin: 0 6px;
+    padding: 4px 26px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.entry > label {
+    color: var(--col-txt1);
+    float: right;
+    cursor: inherit;
+}
+.dropdown > .entry:hover,
+.dropdown > .menubar-tab[active],
+.dropdown > .menubar-tab:hover {
+    background: var(--col-fore0);
+}
+
+.dropdown hr {
+    width: 100%;
+    margin: 6px 0;
+    border: none;
+    border-bottom: var(--border);
+}
+
+
+.dropdown > .menubar-tab > label {
+    cursor: pointer;
+}
+.dropdown > .menubar-tab > label + i {
+    padding-top: 3px;
+    float: right;
+}
+.dropdown > .menubar-tab > .dropdown {
+    display: none;
+    flex-direction: column;
+    width: var(--width);
+    padding: 6px 0;
+    position: absolute;
+    left: calc(var(--width) - 8px);
+    top: -7px;
+    background: var(--col-back1);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    cursor: auto;
+}
+.dropdown > .menubar-tab[active] > .dropdown {
+    display: flex;
+}
